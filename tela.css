@@ -1,0 +1,6 @@
+.linha-luz {
+    height: 5px; /* Altura da linha de luz */
+    background: linear-gradient(90deg, rgb(228, 65, 214), rgb(238, 235, 231), rgb(141, 106, 196), rgb(106, 196, 184), rgb(83, 182, 212), rgb(purple);
+    background-size: 300%; /* Para permitir que a animação funcione */
+    animation: mudarCor 15s linear infinite; /* 15s para cada cor mudar a cada 3s */
+}
