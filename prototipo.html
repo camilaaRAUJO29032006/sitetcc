@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Nova fonte -->
     <title>prototipo</title>
     <style>
         /* Estilos gerais */
@@ -20,20 +23,19 @@
             padding: 20px;
         }
         header {
-            background-color: #C71585;
+            background-color: #c76515;
             color: #fff;
             padding: 10px 0;
             text-align: center;
             margin-bottom: 0; /* Remova a margem inferior para trazer a linha colorida mais perto */
         }
-        h1, h2 {
-            font-family: 'Arial Black', sans-serif;
+        h1 {
+            font-family: 'Pacifico', cursive; /* Usando a fonte Pacifico para o título */
+            font-size: 3rem;
             margin-bottom: 10px;
         }
-        h1 {
-            font-size: 3rem;
-        }
         h2 {
+            font-family: 'Big Shoulders Display', cursive; /* Usando Big Shoulders Display para h2 */
             font-size: 2rem;
             color: #C71585;
         }
@@ -48,12 +50,37 @@
             background-size: 300%; /* Para permitir que a animação funcione */
             animation: mudarCor 15s linear infinite; /* 15s para cada cor mudar a cada 3s */
         }
+        /* Barra de Pesquisa */
+        .barra-pesquisa {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .barra-pesquisa input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .barra-pesquisa button {
+            background-color: #C71585;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-left: 10px;
+        }
+        .barra-pesquisa button:hover {
+            background-color: #B11269; /* Cor mais escura ao passar o mouse */
+        }
         /* Lista de Produtos */
         .produtos {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 150px; /* Espaçamento entre colunas */
-            margin-top: 300px; /* Espaçamento acima da lista de produtos */
+            margin-top: 30px; /* Espaçamento acima da lista de produtos */
         }
         .produto {
             background-color: #fff;
@@ -151,10 +178,17 @@
     <div class="linha-luz"></div> <!-- Linha de luz colorida -->
 
     <div class="container">
+        <div class="barra-pesquisa">
+            <form action="#" method="GET">
+                <input type="text" placeholder="Buscar produtos..." name="search">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+
         <section class="produtos">
             <div class="produto">
                 <h3>Batom Matte</h3>
-                <img src="batom.jpeg" alt="Batom Matte" />
+                <img src="kit.jpeg" alt="Batom Matte" />
                 <p>Batom de longa duração com acabamento matte. Disponível em diversas cores.</p>
                 <p><strong>Preço:</strong> R$ 25,00</p>
                 <a href="produto_batom.html"><button>Comprar</button></a>
@@ -216,8 +250,6 @@
                 <a href="produto_perfume.html"><button>Comprar</button></a>
             </div>
             
-            
-
         </section>
     </div>
 
