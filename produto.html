@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Produto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #B11269;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 4rem;
+        }
+        /* ... outros estilos ... */
+
+        .linha-luz {
+            /* ... estilos da linha de luz ... */
+            animation: mudarCor 15s linear infinite;
+        }
+        @keyframes mudarCor {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Beauty Of Secrets</h1>
+        <div class="linha-luz"></div>
+    </header>
+
+    <div class="container">
+        <div class="produto">
+            </div>
+    </div>
+
+</body>
+</html>
