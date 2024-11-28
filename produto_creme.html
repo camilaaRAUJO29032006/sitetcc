@@ -54,8 +54,8 @@
         /* Lista de Produtos */
         .produtos {
             display: flex;
+            flex-direction: column;
             margin: 30px; /* Espaçamento acima da lista de produtos */
-
         }
         .produto {
             background-color: #fff;
@@ -79,10 +79,10 @@
             margin-right: 20px;
         }
 
-        .desc{
-            width: 800px;
-            margin-left: 10px;
+        .desc {
+            margin-top: 20px;
         }
+
         .produto button {
             background-color: #B11269;
             color: #fff;
@@ -113,6 +113,25 @@
             bottom: 0;
             margin-top: 290px;
         }
+        .estrelas {
+            color: #FFD700;
+            font-size: 1.5rem;
+        }
+        .comentarios {
+            margin-top: 20px;
+        }
+        .comentarios h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .comentario {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #B11269;
+            border-radius: 5px;
+        }
         @keyframes mudarCor {
             0% { background-position: 0%; }
             100% { background-position: 100%; }
@@ -140,10 +159,26 @@
         </div>
 
         <div class="produto desc">
-            <div class="info-produto">
-                <div>
-                    <p><strong>Descrição:</strong> Hidratante facial para todos os tipos de pele, com ação revitalizante e antioxidante.</p>
-                   
+            <h3>Descrição</h3> <!-- Título da descrição -->
+            <p>
+                Creme facial nutritivo sem perfume com prebióticos de origem natural que nutre a pele enquanto a protege de danos externos. Desde a primeira aplicação, fortalece a barreira da pele em 41%, nutre e acalma a pele. Depois de usar este creme hidratante e nutritivo por 28 dias, a pele fica reparada, protegida e visivelmente mais bonita.
+            </p>
+            <p>
+                Perfeito para peles sensíveis e secas, sua textura rica e aerada proporciona uma sensação de conforto sem deixar uma película oleosa.
+            </p>
+            <div class="estrelas">
+                ★★★★★
+            </div>
+            <div class="comentarios">
+                <h4>Comentários:</h4>
+                <div class="comentario">
+                    <p><strong>Maria:</strong> Adorei o creme, minha pele está muito mais hidratada!</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>João:</strong> Produto excelente, recomendo para quem tem pele sensível.</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Ana:</strong> O melhor creme que já usei, vale cada centavo!</p>
                 </div>
             </div>
         </div>

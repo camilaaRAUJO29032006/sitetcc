@@ -51,37 +51,11 @@
             background-size: 300%; /* Para permitir que a animação funcione */
             animation: mudarCor 15s linear infinite; /* 15s para cada cor mudar a cada 3s */
         }
-        /* Barra de Pesquisa */
-        .barra-pesquisa {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .barra-pesquisa input[type="text"] {
-            width: 300px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .barra-pesquisa button {
-            background-color: #B11269;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            margin-left: 10px;
-        }
-        .barra-pesquisa button:hover {
-            background-color: #B11269; /* Cor mais escura ao passar o mouse */
-        }
         /* Lista de Produtos */
         .produtos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 150px; /* Espaçamento entre colunas */
-            margin-top: 30px; /* Espaçamento acima da lista de produtos */
+            display: flex;
+            flex-direction: column;
+            margin: 30px; /* Espaçamento acima da lista de produtos */
         }
         .produto {
             background-color: #fff;
@@ -89,7 +63,6 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            text-align: center; /* Centraliza os conteúdos */
             margin-bottom: 20px; /* Espaçamento abaixo de cada produto */
         }
         .produto:hover {
@@ -99,17 +72,17 @@
             font-size: 1.5rem;
             margin-bottom: 10px;
             color: #030002;
-            text-align: center; /* Alinha o título à direita */
-        }
-        .produto p {
-            color: #555;
         }
         .produto img {
-            width: 400px;
+            width: 300px;
             height: auto;
-            display: block;
-            margin: 0 auto;
+            margin-right: 20px;
         }
+
+        .desc {
+            margin-top: 20px;
+        }
+
         .produto button {
             background-color: #B11269;
             color: #fff;
@@ -120,40 +93,15 @@
             font-size: 1rem;
         }
         .produto button:hover {
-            background-color: #B11269;
+            background-color: #920c58;
         }
-        /* Formulário de Contato */
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
+        .info-produto {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        form label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        form button {
-            background-color: #B11269;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        form button:hover {
-            background-color: #B11269;
+        .info-produto div {
+            flex: 1;
         }
         /* Rodapé */
         footer {
@@ -163,6 +111,26 @@
             padding: 20px 0;
             width: 100%;
             bottom: 0;
+            margin-top: 290px;
+        }
+        .estrelas {
+            color: #FFD700;
+            font-size: 1.5rem;
+        }
+        .comentarios {
+            margin-top: 20px;
+        }
+        .comentarios h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .comentario {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #B11269;
+            border-radius: 5px;
         }
         @keyframes mudarCor {
             0% { background-position: 0%; }
@@ -177,11 +145,43 @@
     </header>
     <div class="linha-luz"></div> <!-- Linha de luz colorida -->
     <section class="produtos">
+
         <div class="produto">
-            <h3>Batom Matte</h3>
-            <img src="batom.jpeg" alt="Batom Matte" />
-            <p><strong>Preço:</strong> R$ 25,00</p>
-            <a href="produto_batom.html"><button>Comprar</button></a>
+            <h3>Batom mate</h3>
+            <div class="info-produto">
+                <img src="batom.jpeg" alt="Batom mate">
+                <div>
+                    <p><strong>Preço:</strong> R$ 25,00</p>
+                    <p><strong>Parcelamento:</strong> Até 5x de R$ 5,00 sem juros</p>
+                    <a href="produto_creme.html"><button>Comprar</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto desc">
+            <h3>Descrição</h3> <!-- Título da descrição -->
+            <p>
+                O Batom Líquido Vermelho Hibisco Niina Secrets Skinny Matte é o segredo para uma make que cuida dos seus lábios enquanto
+                 te deixa ainda mais linda. De textura leve e cor impactante, sua embalagem vem com uma tampa marsala sofisticada e um aplicador confortável. Mais um sucesso cocriado por Niina Secrets e Eudora. 
+            </p>
+            <p>
+                Uma criação multifacetada com um aroma delicioso que mistura frutas com o gourmand com a doçura de notas cremosas e envolventes: Morango Silvestre, Baunilha, Flor de Avelã, Caramelo Flor de Sal e Chocolate Meio Amargo. Apaixonante!   
+            </p>
+            <div class="estrelas">
+                ★★★★★
+            </div>
+            <div class="comentarios">
+                <h4>Comentários:</h4>
+                <div class="comentario">
+                    <p><strong>Maria:</strong> Adorei o batom, ficou lindo nos labios!</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>João:</strong> Produto excelente, recomendo.</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Ana:</strong> O melhor batom que já usei, vale cada centavo!</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
