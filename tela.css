@@ -4,3 +4,17 @@
     background-size: 300%; /* Para permitir que a animação funcione */
     animation: mudarCor 15s linear infinite; /* 15s para cada cor mudar a cada 3s */
 }
+.botao-comprar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #B11269;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.botao-comprar:hover {
+    background-color: #920c58;
+}
