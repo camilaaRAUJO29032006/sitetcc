@@ -27,15 +27,15 @@
             color: #fff;
             padding: 10px 0;
             text-align: center;
-            margin-bottom: 0; /* Remova a margem inferior para trazer a linha colorida mais perto */
+            margin-bottom: 0;
         }
         h1 {
-            font-family: 'Pacifico', cursive; /* Usando a fonte Pacifico para o título */
+            font-family: 'Pacifico', cursive;
             font-size: 4rem;
             margin-bottom: 10px;
         }
         h2 {
-            font-family: 'Big Shoulders Display', cursive; /* Usando Big Shoulders Display para h2 */
+            font-family: 'Big Shoulders Display', cursive;
             font-size: 2rem;
             color: #B11269;
         }
@@ -46,16 +46,16 @@
         }
         /* Linha de luz colorida */
         .linha-luz {
-            height: 3px; /* Altura da linha de luz */
+            height: 3px;
             background: linear-gradient(90deg, rgb(255, 0, 150), rgb(255, 255, 255), rgb(170, 0, 200), rgb(0, 200, 150), rgb(255, 0, 150), rgb(128, 0, 128));
-            background-size: 300%; /* Para permitir que a animação funcione */
-            animation: mudarCor 15s linear infinite; /* 15s para cada cor mudar a cada 3s */
+            background-size: 300%;
+            animation: mudarCor 15s linear infinite;
         }
         /* Lista de Produtos */
         .produtos {
             display: flex;
             flex-direction: column;
-            margin: 30px; /* Espaçamento acima da lista de produtos */
+            margin: 30px;
         }
         .produto {
             background-color: #fff;
@@ -63,7 +63,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            margin-bottom: 20px; /* Espaçamento abaixo de cada produto */
+            margin-bottom: 20px;
         }
         .produto:hover {
             transform: translateY(-5px);
@@ -78,11 +78,9 @@
             height: auto;
             margin-right: 20px;
         }
-
         .desc {
             margin-top: 20px;
         }
-
         .produto button {
             background-color: #B11269;
             color: #fff;
@@ -95,6 +93,20 @@
         .produto button:hover {
             background-color: #920c58;
         }
+        .botao-comprar {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #B11269;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .botao-comprar:hover {
+            background-color: #920c58;
+        }
         .info-produto {
             display: flex;
             align-items: center;
@@ -103,7 +115,6 @@
         .info-produto div {
             flex: 1;
         }
-        /* Rodapé */
         footer {
             background-color: #B11269;
             color: #fff;
@@ -143,9 +154,8 @@
         <img src="Beauty.png" alt="Logo da Beauty of Secrets" style="width: 100px; height: auto; float: left; margin-right: 70px;" />
         <h1>Beauty Of Secrets</h1>
     </header>
-    <div class="linha-luz"></div> <!-- Linha de luz colorida -->
+    <div class="linha-luz"></div>
     <section class="produtos">
-
         <div class="produto">
             <h3>Batom mate</h3>
             <div class="info-produto">
@@ -153,16 +163,15 @@
                 <div>
                     <p><strong>Preço:</strong> R$ 25,00</p>
                     <p><strong>Parcelamento:</strong> Até 5x de R$ 5,00 sem juros</p>
-                    <a href="produto_creme.html"><button>Comprar</button></a>
+                    <a href="pagamento.html" class="botao-comprar">Comprar</a>
                 </div>
             </div>
         </div>
-
         <div class="produto desc">
-            <h3>Descrição</h3> <!-- Título da descrição -->
+            <h3>Descrição</h3>
             <p>
                 O Batom Líquido Vermelho Hibisco Niina Secrets Skinny Matte é o segredo para uma make que cuida dos seus lábios enquanto
-                 te deixa ainda mais linda. De textura leve e cor impactante, sua embalagem vem com uma tampa marsala sofisticada e um aplicador confortável. Mais um sucesso cocriado por Niina Secrets e Eudora. 
+                te deixa ainda mais linda. De textura leve e cor impactante, sua embalagem vem com uma tampa marsala sofisticada e um aplicador confortável. Mais um sucesso cocriado por Niina Secrets e Eudora. 
             </p>
             <p>
                 Uma criação multifacetada com um aroma delicioso que mistura frutas com o gourmand com a doçura de notas cremosas e envolventes: Morango Silvestre, Baunilha, Flor de Avelã, Caramelo Flor de Sal e Chocolate Meio Amargo. Apaixonante!   
@@ -173,7 +182,7 @@
             <div class="comentarios">
                 <h4>Comentários:</h4>
                 <div class="comentario">
-                    <p><strong>Maria:</strong> Adorei o batom, ficou lindo nos labios!</p>
+                    <p><strong>Maria:</strong> Adorei o batom, ficou lindo nos lábios!</p>
                 </div>
                 <div class="comentario">
                     <p><strong>João:</strong> Produto excelente, recomendo.</p>
